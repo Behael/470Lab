@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}Magic the Gathering{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <br>
+  <h1>Index</h1>
+  <p>Magic the Gathering is a trading card game that has been around since 1993 and one of the biggest games out there on the market.
+  <br>
+  <p>There are various types of formats that you can play Magic, each with its' own rules and restrictions that players have to build their deck under.
+  <br>
+  <p>For beginners, I would recommend you get into the "Commander" format---the enviroment for the format ranges greatly from newbie-friendly to competetive and it was created by the players themsleves! </p>
+  <br>
+  <p>You can get into this format for little as $10, but be warned, the more you play, the more you'll likely get drawn into the game and thus more money spend. </p>
+  <br>
+  <p>Despite the warning, the game is extremely fun to play with friends, as the main purpose is to get people together and play. </p>
+  <br>
+  <p>There are ton of websites and forums to draw information and help from. </p>
+  <br>
+  <p> For starters, Magic has 5 Colours: White, Black, Red, Blue and Green---each representing a different 'aspect' that we as humans can relate to. A deck can contain any combination of colours. </p>
+  <br>
+  <p>Funnily enough, there are even surveys that can find out what your preferred colours are without even playing!</p>
+  <br>
+  <p> Here are some resources: 
+  <br>
+  <div id="Navagation">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="https://magic.wizards.com/en/content/commander-format">Getting Started</a><br>
+          <a class="p-2 text-muted" href="https://mtg.gamepedia.com/Color">Colour Identities</a><br>
+          <a class="p-2 text-muted" href="http://gatherer.wizards.com/Pages/Default.aspx">Gatherer</a><br>
+          <a class="p-2 text-muted" href="https://edhrec.com/">Commander Card Suggestions</a><br>
+        </nav>
+  <br>
+{% endblock %}
+

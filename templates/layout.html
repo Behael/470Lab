@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+      <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}">
+      <title>{% block title %} {% endblock %} - My Webpage</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div id="Navagation">
+      {% if session['login'] %}
+        <p> Welcome, me! </p>
+          <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="/">Home</a>
+          <a class="p-2 text-muted" href="magic">Magic</a>
+          <a class="p-2 text-muted" href="manga">BRB Manga</a>
+          <a class="p-2 text-muted" href="games">Games</a>
+          <a class="p-2 text-muted" href="470">470</a>
+          <a class="p-2 text-muted" href="logout">Log out</a>
+      {% else %}
+        <a class="p-2 text-muted" href="/">Home</a>
+        <a class="p-2 text-muted" href="magic">Magic</a>
+        <a class="p-2 text-muted" href="manga">BRB Manga</a>
+        <a class="p-2 text-muted" href="games">Games</a>
+        <a class="p-2 text-muted" href="login">Login</a>
+      </nav>
+     {% endif %}
+    </div>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+        &copy; Moo Moo Farms</a>.
+      {% endblock %}
+    </div>
+  </body>
+</html>
